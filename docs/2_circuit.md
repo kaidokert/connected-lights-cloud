@@ -1,20 +1,20 @@
 ### Building the circuit
 
-First, build a basic circuit by connecting the RGB LED and the PIR sensor to the development board.
+
 
 #### SD card
 
 <span class="notes">**Note:** Before you start, put the SD card in the SD card reader on your development board.</span>
 
-Mbed Cloud requires an external storage to store the identity of the device, and to store firmware updates. This external storage does not necessarily have to be an SD card (which is too expensive to put in a production device), you can also use internal flash or external SPI flash. To modify the storage layer, you'll need to modify the [bootloader](see 'Section 8 - Firmware updates') and the application (see `mbed_app.json` in the `connected-lights-cloud` application later in this tutorial); which is not covered in this tutorial. More information is in the [Mbed Cloud docs](https://cloud.mbed.com/docs/).
+Mbed Cloud requires an external storage to store the identity of the device, and to store firmware updates. This external storage does not necessarily have to be an SD card (which is too expensive to put in a production device), you can also use internal flash or external SPI flash. To modify the storage layer, you'll need to modify the [bootloader](see 'Section 8 - Firmware updates') and the application (see `mbed_app.json` in the `connected-lights-cloud` application later in this tutorial); which is not covered in this tutorial. More information is in the [Mbed Cloud docs](https://cloud.mbed.com/docs/).  Our internal development boards mostly use a SPI [flash component](https://www.mouser.co.uk/ProductDetail/?qs=sz9oxq9AnY8q5F9zmlFAYA%3D%3D).
 
 #### Finding suitable pins
 
-For the circuit, you need four digital pins. Three of these need to support pulse width modulation (PWM). Through PWM, you can control the amount of current flowing through a circuit, and you can use this to dim the colors of the LED on one of the three RGB channels.
+For the circuit, you need four digital pins. Three of these need to support pulse width modulation (PWM). Using PWM, you can control the amount of power flowing through a circuit, and you can use this to dim the colors of the LED on one of the three RGB channels.
 
-To find pins that you can use, look at the [platform page](https://developer.mbed.org/platforms/) for your board, and find the pinout. The pinout defines the characteristics of the pins. For example, here is the pinout for the FRDM-K64F. In this example, you can use D5, D6 and D7 as our PWM pins:
+To find pins that you can use, look at the [platform page](https://developer.mbed.org/platforms/) for your board, and find the pinout. The pinout defines the characteristics of the pins. For example <__lets change this to Odin as it is actually mass producible__>, here is the pinout for the ~~FRDM-K64F~~Odin. In this example, you can use ~~D5~~, ~~D6~~ and ~~D7~~ as PWM pins:
 
-<span class="images">![FRDM-K64F pinout showing PWM pins](https://s3-us-west-2.amazonaws.com/cloud-docs-images/lights3.png)<span>The pinout for the NXP FRDM-K64F, showing that you can use pins D5, D6 and D7 for PWM.</span></span>
+<span class="images">![FRDM-K64F pinout showing PWM pins](https://s3-us-west-2.amazonaws.com/cloud-docs-images/lights3.png)<span>The pinout for the ~~NXP FRDM-K64F~~Odin, showing that you can use pins D5, D6 and D7 for PWM.</span></span>
 
 You also need a pin for the PIR sensor. This can be any digital pin, as long as it's not marked as UART (D0 and D1 on the pinout above). In this example, you can use pin D2.
 
