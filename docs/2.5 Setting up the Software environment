@@ -1,0 +1,14 @@
+Chapter 3
+
+# Setting up the software development environemnt
+
+There are multiple optiosn to develop code for Mbed.  A good choice for anyone starting with Mbed for the fisrt time is our online compiler which runs witin a web browser and doesn't require any installations.  For advanced users a command line tool might be a preferred method.  Partners in the Mbed ecosystem also develop professioanl tools that give ultimate flexibility with embedded development IAR is a high end tool in this category.
+
+What about Keil and ARM DS and different compilers?
+
+Click <here> for the installation instrucions for CLI
+Click <here> for using the online compiler, maybe a link to the 5 minute quick start guide?
+Click <here> for a link to the IAR environment
+Click <here> for details about getting started with Keil
+
+For the rest of this tutorial we will use the Mbed Studio which is based on Eclipse.  <here> are the instrucitons to getting setup, when it has installed return to this page for the rest of the tutorial, see you soon....
