@@ -1,0 +1,7 @@
+So you are happy with the device that has been developed and its functioanlity.  Its now time to start optimising it for mass produciton, her are a few tips for things to look out for:
+
+* How to buld a release image rather than a debug image
+* How to build a release version of the webapp (I assume such a thing exisits)
+* Security, which types of certificates to use and who needs to sign it
+* Things to consider for scalability, is the current architecture going to scale to millions of devices in a cost effective way?
+* Power consumption minimisation
