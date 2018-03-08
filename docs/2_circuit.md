@@ -33,3 +33,6 @@ Here is a diagram of hooking up the PIR sensor and the RGB LED to your board. Re
 When you have connected everything, the circuit looks something like this:
 
 <span class="images">![PIR sensor and RGB LED connected to FRDM-K64F](https://s3-us-west-2.amazonaws.com/cloud-docs-images/lights5.png)</span>
+
+
+Note, the original draft of this page was written for the K64F but our marketing team thought a WiFi version would be more interesting at the risk of the authors having to rewrite the entire page.  As we already said, its very easy to jump between different platforms and the only changes were a new photo and different pin numbers as its physiclly a diffeent baord.  Oh and obviosuly no need for WiFi SSID and password when we get to that stage.  If you are interested in seeing the original K64F page see it <__here__>
