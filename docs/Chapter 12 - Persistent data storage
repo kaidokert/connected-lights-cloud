@@ -1,0 +1,9 @@
+We have developed a simple UI which is able to display the current status based on the value stored in Mbed Cloud.  Its worth noting Mbed Cloud only retains the last known value which can be consumed by your webapp, there isn't any storage and certainly no visibility by anyone other than you with your API keys.
+
+Here we provide an example of how to connect a simile database between the interface of Mbed Cloud and your webapp.  
+
+Show how to deploy a database
+Show how to connect it to Mbed Cloud so all events are captured
+Show how that dat can be used directly in the webapp
+Show how history can now be displayed even when the browser is closed
+
