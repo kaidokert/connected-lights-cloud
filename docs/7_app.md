@@ -1,3 +1,5 @@
+Now chapter 9
+
 ### Bringing it all together
 
 You’ve already built almost all of the pieces required for the lighting system. You now have:
@@ -45,3 +47,6 @@ Open your web browser, and go to [http://localhost:5265](http://localhost:5265) 
 #### Konekuta
 
 The web application is built on top of [Konekuta](https://github.com/armmbed/konekuta/tree/cloud), a framework for building dynamic web applications on top of Mbed Cloud. Konekuta solves a number of common problems with building connected applications, including state syncing, going offline/online, handling errors and updating the UI when devices connect or disconnect from Mbed Cloud. Konekuta is open source and available on [GitHub](https://github.com/armmbed/konekuta/tree/cloud).
+
+
+How do we host this on a live service rather than locally?
