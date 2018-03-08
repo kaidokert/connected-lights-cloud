@@ -1,8 +1,16 @@
+now Chapter 10
+
 ### Applying firmware updates to the device
 
 One of the big features of Mbed Cloud is the ability to update devices through a firmware update over the air. This is not applicable when you're developing, but it is important when you have deployed thousands of devices in the field. Through the firmware update process, you can patch bugs and apply security updates.
 
 Currently, your application sends a notification to the cloud every time the PIR sensor is triggered. That is wasteful if someone is standing in front of the sensor. The lights are already on, but the sensor keeps firing, so the networking stack needs to wake up all the time. Modify the code, so it does not send events when the lights are already on.
+
+#### Building with Mbed Studio
+
+#### Building with Keil
+
+#### Building with Online compiler
 
 #### Building with Mbed CLI
 
@@ -187,7 +195,7 @@ In the Mbed Cloud Portal:
 
 ###### Starting the campaign
 
-With the firmware, the manifest and the device filter in place, you can start the firmware update campaign.
+With the firmware,  manifest and device filter in place, you can start the firmware update campaign.
 
 1. Select **Update firmware** > **Update campaigns**.
 1. Click **Create campaign**.
@@ -211,3 +219,10 @@ Downloading: 0 %
 ```
 
 When the download completes, the firmware is verified. If everything is OK, the firmware update is applied. Your device is now running the latest version of the application, and when you have the web app open, you see that you don't get PIR notifications if the light is already on.
+
+#### Monitor the status
+<see xxxxxxxx to monitor the update progress.  This can be useful if you have millions of devices deployed across the planet and need to know which ones have updated succesfully>
+
+#### Its robust
+Feel free to experiment with removing power or network connectivity during an over-the-air update.  Notice how the process resumes as soon as the power/nectork is restored.  This demonstrates the robust nature of FOTA updates with Mbed.  It has the added benefits of not needing to restart an update from the beginning which reduces energy consumption and network bandwidth.
+
