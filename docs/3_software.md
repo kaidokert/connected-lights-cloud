@@ -1,20 +1,11 @@
+__We need an options page here.  The primary focus is on Mbed Studio but advanced users might want to use [CLI](tbd), [IAR](tbd), [onine compiler](tbd), [Keil](tbd) etc..  This page needs to be duplicated for each of the tools but keep the default as Mbed Studio.__
+
 ### Writing the software
 
 Now you can write some software to verify that the circuit works. The software will enable the LED whenever it sees movement. You can either build locally by using Mbed CLI, or build in the cloud by using the Mbed Online Compiler. This document first shows you how to build the application using Mbed CLI.
 
-#### Setting up Mbed CLI
+Remove this section as it is covered in the previous chapter
 
-Part of the ARM Mbed IoT Device Platform is Mbed CLI, an offline compilation tool, which you will use to write and compile software. To get started:
-
-1. [Install Mbed CLI](https://github.com/armmbed/mbed-cli#installation).
-1. Open a terminal or command prompt.
-1. Import the `connected-lights-cloud` project via:
-
-    ```
-    $ mbed import git@github.com:armmbed/connected-lights-cloud.git connected-lights-cloud
-    ```
-
-This program contains a configuration file and all the source code, which you will use to configure the pins the software uses.
 
 #### Adding the code
 
