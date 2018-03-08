@@ -1,0 +1,3 @@
+In the previous lesson you leanred how to conduct a firmware update using the Mbed Cloud Portal.  In a produciton deployment we assume you will probably want to wrap up all functioanlity in your own GUI environemnt.  For this purpose we provide a series of API functions.
+
+This is how to add FOTA functioanlity to your webapp.......
