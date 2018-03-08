@@ -1,3 +1,5 @@
+probably chapter 7 now other sections have been added earlier
+
 ### Controlling the device from Mbed Cloud
 
 Now, the device is connected through Mbed Cloud. In the code sample in the previous section, you defined resources using calls to `client.define_resource()`. These resources are automatically exposed to Mbed Cloud, from where you can read and write resources, and changes automatically sync with the device. That means that you already have a remote management interface for this device.
