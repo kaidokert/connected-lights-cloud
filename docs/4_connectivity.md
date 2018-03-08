@@ -1,3 +1,5 @@
+This will be chapter 6
+
 ### Adding connectivity
 
 Now that you've built the basic circuit and written the code to control that circuit, you can add connectivity to the project. Part of the ARM Mbed IoT Device Platform is Mbed Cloud, a unified solution to connect devices to the internet and communicate with them, regardless of *how* these devices connect to the internet. Libraries are available for a variety of connectivity methods, including Ethernet, Wi-Fi and cellular. You also can add new connectivity methods with the [unified networking APIs](https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/APIs/communication/network_sockets/) in Mbed OS 5.
@@ -33,6 +35,14 @@ To wire the ESP8266 module to your development board, look at the [ESP8266 Cookb
 
 <span class="notes">**Note about ESP8266 on NUCLEO boards:** The NUCLEO boards reserve pins D0 and D1 for serial communication with the computer. Use pins `D8` (to ESP8266 TX) and `D2` (to ESP8266 RX) instead.</span>
 
+### Adding libraries with Mbed Studio
+
+### Adding libraries with Keil
+
+### Adding libraries with Online compiler
+
+### Adding libraries with IAR
+
 #### Adding libraries with Mbed CLI
 
 For the device and Mbed Cloud to talk, you need the [Mbed Cloud Client library](https://cloud.mbed.com/docs/latest/mbed-cloud-client/index.html). This is a cross-platform library that runs on Mbed OS and Linux and that you can port to other RTOSes. This example uses an additional library built on top of Mbed Cloud Client: SimpleM2MClient. We created this library specifically to use Mbed OS 5, so you can expose variables and resources to the cloud.
@@ -44,6 +54,8 @@ These libraries are already in the project (see the `.lib` files in the project 
 #### Updating configuration
 
 You need to tell **EasyConnect** which connectivity method to use. Open `mbed_app.json`, and locate the `network-interface` field. Change the `value` to the connectivity method used:
+
+If you are using Wi-Fi, you also need to set your Wi-Fi SSID and your password.
 
 ```json
 /* mbed_app.json */
@@ -76,7 +88,7 @@ You need to tell **EasyConnect** which connectivity method to use. Open `mbed_ap
 /* snip */
 ```
 
-If you are using Wi-Fi, you also need to set your Wi-Fi SSID and your password.
+
 
 #### Writing code
 
