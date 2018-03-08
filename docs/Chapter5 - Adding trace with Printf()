@@ -1,0 +1,35 @@
+This will be chapter 5
+
+Adding trace to your code
+
+Introduciton and outcomes:
+Using an LED to indicate the status of a program is a valid way to peer inside the software but adding serial trace would be better.  This quick guide shows you how its done with
+Mbed on different development platforms. The USB lead that powers the board also implements a serial connection. The serial connection is a useful tool for viewing detailed information
+about what the device is doing so that you can see the output from the board applications as we run through the lessons.
+
+The instrucitons:
+Select your OS for the appropriate guide <take info from Step 1.2 of the workshop (https://github.com/ARMmbed/mbed-connect-workshop-2017/blob/master/instructions.md)>
+Windows <guide to adding printf and seeing it on a windows PC>
+Linux <guide to adding printf and seeing it on a windows PC>
+Mac <guide to adding printf and seeing it on a windows PC>
+
+Now modify the code from the previous chapeter to include Printf() statements, it could look somehting like this:
+#include "mbed.h"
+DigitalOut led1(LED1);
+// main() runs in its own thread in the OS
+int main() {
+while (true) {
+printf("Toggle LED");
+led1 = !led1;
+wait(0.5);
+__use example from previous chapter__
+
+}
+}
+
+Note, during development we normally use ‘debug builds’, these consist of extra information to help during the development phase.  Unfortunately the debug symbols take up extra memory and sometimes slow down the operation of your program.  Before production it is a good idea to create a ‘release build’ for shipped products.  One note of caution, always test the release build as it may perform very slightly differently to the debug version due to small timing changes.  These builds can be toggled by selecting <how to toggle release/debug builds>
+
+If you have a favorite serial terminal program, you can connect to the board using baud rate 115200.
+
+Tips
+If you don’t require the full capabilities of printf, why not check out Jan’s blog showing how to achieve similar functionality but using a fraction of the memory
