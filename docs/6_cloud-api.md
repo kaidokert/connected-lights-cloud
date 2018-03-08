@@ -1,3 +1,5 @@
+Change to Chapter 8 from 6 now new sections are added.  Wish I knew how to use Github to change file names
+
 ### Using the Mbed Cloud API
 
 The Mbed Cloud Portal that you used in the previous section is a wrapper around the Mbed Cloud API. Through this API, you can connect any app to any device. You can use this API to build an app that allows you to control any of the lighting systems that you deploy in your house or office.
