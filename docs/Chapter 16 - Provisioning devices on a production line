@@ -1,0 +1,3 @@
+Here is an introduciton to setting up a production line to handle vast volumes of Mbed based devices and the tools we already have available to help with this task.
+
+Provisioning is the process of giving each device a unique identity.  During the development phase you gave your devices an ID by doing………<stuff>.  For mass production each device will have the same image but needs a unique identity.  This lesson explains how to set up a production line that is capable of handling xxxx devices per hour.
