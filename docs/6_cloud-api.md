@@ -197,3 +197,6 @@ Motion detected at 015b58400ce40000000000010010022a, new count is 8
 ```
 
 See the [full docs](https://github.com/ARMmbed/mbed-cloud-sdk-python) on how to use the Python library.
+
+
+Do we need to mention the differences between webhooks and Polling?  Any need for explaining the REST API, I know as an embedded eveloper REST is a new thing to me.
